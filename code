@@ -1,0 +1,21 @@
+#include <iostream>
+#include <vector>
+#include <stdexcept>
+using namespace std;
+
+// Fonction qui prends plusieurs parametres:
+void challengefonct(const vector<int>& params){
+    cout<<"fonction avec "<<params.size()<<" parameters."<< endl;
+}
+int main() {
+    // On va augmenter le nombre de parametres jusqu'a ce qu'une erreur survienne
+    try{
+        for(size_t i=1; ;i*=3){
+            vector<int> params(i,1);
+            challengefonct(params);
+        }
+    }catch(const bad_alloc& e){
+    cout<<"Memory allocation error:"<<e.what()<<endl; // En cas d'erreur (comme un depassement de memoire) 
+    }    
+    return 0;
+}
