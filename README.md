@@ -1,0 +1,1 @@
+Apparently, this challenge has no definitive solution, and there are no technical limits on how many parameters you can add to a function. It depends on your PC, particularly the type of hardware you have (CPU, RAM), as well as the compiler you're using and the method or approach of your code
